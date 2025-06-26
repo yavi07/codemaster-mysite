@@ -10,12 +10,34 @@
  * governing permissions and limitations under the License.
  */
 
+/* :root {
+  --background-light: #f8f9fc;
+  --background-dark: #1a1b2f;
+ 
+  --text-light: #1a1a1a;
+  --text-dark: #f1f1f1;
+ 
+  --primary-color: #c92a2a;
+  --accent-color: #a3bffa;
+  --neutral-color: #b0b0b0;
+ 
+  --module1-color: #6a1b9a;
+  --module2-color: #7b2cbf;
+  --module3-color: #364fc7;
+  --module4-color: #c92a2a;
+  --module5-color: #3b5bdb;
+  --module6-color: #5f3dc4;
+ 
+ 
+  --module-light: #a3bffa;
+  --module-dark: #7b2cbf;
+} */
 :root {
   /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
+  --background-color: #f8f9fc;
+  --light-color: #f1f1f1;
+  --dark-color: #1a1b2f;
+  --text-color: #1a1a1a;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
