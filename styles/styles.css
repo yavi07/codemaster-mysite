@@ -274,6 +274,7 @@ main > .section:first-of-type {
 main .section.light,
 main .section.highlight {
   background-color: var(--accent-color);
+  color: var(--dark-color);
   margin: 0;
   padding: 40px 0;
 }
