@@ -40,7 +40,7 @@
   --text-color: #f8f9fc;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
-  --accent-color: #25604f;
+  --accent-color: #010101;
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
@@ -273,7 +273,7 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--accent-color);
+  background-color: #010101;
   margin: 0;
   padding: 40px 0;
 }
