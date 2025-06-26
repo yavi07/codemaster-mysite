@@ -1,0 +1,19 @@
+.about {
+    padding:4rem;
+    display: flex;
+}
+
+.about > div{
+    background-color: var(--light-color);
+    color: var(--accent-color);
+    padding: 24px;
+    border-radius: 24px;
+    border-style: solid;
+    border-color: var(--accent-color);
+    margin-bottom: 0;
+}
+
+.about > div h1,h2,h3{
+    color: royalblue;
+}
+
