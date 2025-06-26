@@ -254,7 +254,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+    border-bottom: 8px solid var(--dark-color);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
