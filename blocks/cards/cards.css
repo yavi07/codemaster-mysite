@@ -10,6 +10,7 @@
 .cards > ul > li {
   border: 1px solid var(--accent-color);
   background-color: var(--background-color);
+  border-radius: 24px;
 }
 
 .cards .cards-card-body {
@@ -21,7 +22,10 @@
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  aspect-ratio: 1.05/1;
   object-fit: cover;
+  border-radius: 24px;
 }
