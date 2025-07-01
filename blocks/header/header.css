@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--accent-color);
+  background-color: var(--orange-color);
   opacity: 0.9;
   width: 100%;
   z-index: 2;
@@ -33,7 +33,7 @@ header nav[aria-expanded='true'] {
   min-height: 100dvh;
 }
 
-@media (width >= 900px) {
+@media (width >= 768px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,7 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 
 /* hamburger */
@@ -131,7 +131,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
 }
 
-@media (width >= 900px) {
+@media (width >= 768px) {
   header nav .nav-hamburger {
     display: none;
     visibility: hidden;
@@ -188,7 +188,7 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
-@media (width >= 900px) {
+@media (width >= 768px) {
   header nav .nav-sections {
     display: block;
     visibility: visible;
