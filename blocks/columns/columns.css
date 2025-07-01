@@ -38,5 +38,6 @@
   .columns > div > div {
     flex: 1;
     order: unset;
+    text-size-adjust: auto;
   }
 }
