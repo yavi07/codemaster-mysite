@@ -280,4 +280,5 @@ main .section.highlight {
   background-color: var(--accent-color2);
   margin: 0;
   padding: 40px 0;
+  border-radius: 24px;
 }
