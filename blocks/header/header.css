@@ -5,8 +5,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
-  border-bottom-color: var(--light-color);
-  box-shadow: 0 0 2px var(--light-color);
+  box-shadow: 0 0 5px var(--dark-color);
 }
 
 header nav {
