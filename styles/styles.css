@@ -34,14 +34,15 @@
 } */
 :root {
   /* colors */
-  --background-color: #1a1b2f;
+  --background-color: #f1f1f1;
   --light-color: #f1f1f1;
   --dark-color: #1a1b2f;
-  --text-color: #f8f9fc;
+  --text-color: #010101;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
   --accent-color: #010101;
   --accent-color2: #FFD00F;
+  --light-accent: #f1e1f1;
   /* fonts */
   --body-font-family: "Cascadia Mono", sans-serif;
   --heading-font-family: "Cascadia Mono", monospace;
@@ -275,7 +276,7 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: #010101;
+  background-color: var(--accent-color2);
   margin: 0;
   padding: 40px 0;
 }
