@@ -12,6 +12,19 @@ footer .footer > div {
 
 footer .footer p {
   margin: 0;
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+}
+
+footer .footer ul {
+  display:flex;
+  flex-direction: row;
+  gap:1rem;
+}
+
+footer .footer ul > li {
+  text-decoration: none;
 }
 
 @media (width >= 768px) {
