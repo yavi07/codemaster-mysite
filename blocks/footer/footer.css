@@ -10,22 +10,20 @@ footer .footer > div {
   padding: 40px 24px 24px;
 }
 
-footer .footer p 
+footer .footer p,
 footer .footer a{
   margin: 0;
-  display:flex;
-  flex-direction: row;
-  gap:2rem;
 }
 
-footer .footer ul {
+footer .footer ul a{
   display:flex;
-  flex-direction: row;
-  gap:1rem;
-}
-
-footer .footer ul > li {
+  flex-direction: column;
   text-decoration: none;
+  color: var(--text-color);
+}
+
+footer .footer > ul > li ::marker{
+  display:none;
 }
 
 @media (width >= 768px) {

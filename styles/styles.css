@@ -282,3 +282,7 @@ main .section.highlight {
   padding: 40px 0;
   border-radius: 24px;
 }
+
+.hide{
+  visibility:hidden;
+}
