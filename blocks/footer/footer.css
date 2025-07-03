@@ -10,7 +10,8 @@ footer .footer > div {
   padding: 40px 24px 24px;
 }
 
-footer .footer p {
+footer .footer p 
+footer .footer a{
   margin: 0;
   display:flex;
   flex-direction: row;
