@@ -16,15 +16,16 @@ footer .footer a{
 }
 
 footer .footer ul a{
-  display:flex;
-  flex-direction: column;
   text-decoration: none;
   color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 12px;
 }
 
-footer .footer > ul > li ::marker{
-  display:none;
+footer .footer ul a:hover{
+  background-color: var(--accent-color2);
 }
+
 
 @media (width >= 768px) {
   footer .footer > div {
