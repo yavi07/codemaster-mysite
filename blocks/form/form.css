@@ -109,12 +109,75 @@
     max-width: 33vw;
   }
 }
-
+/*Added Card like options for the quiz */
+/* Layout container for answer options */
 .form .field-wrapper.selection-wrapper {
+  display: grid;
   grid-auto-flow: column;
-  justify-content: start;
-  gap: 1ch;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
 }
+
+/* Hide radio inputs */
+.form .field-wrapper.selection-wrapper input[type="radio"] {
+  display: none;
+}
+
+/* Style labels like clickable cards */
+.form .field-wrapper.selection-wrapper label {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--dark-color);
+  border-radius: 10px;
+  background-color: var(--accent-color2);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  min-width: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Style the span (text) inside the label */
+.form .field-wrapper.selection-wrapper label span {
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.form .field-wrapper.selection-wrapper label:hover {
+  border-color: var(--dark-color);
+  background-color: var(--background-color);
+}
+
+/* Correct/Wrong feedback styles (JS adds these to <label>) */
+.form .field-wrapper.selection-wrapper label.correct {
+  background-color: var(--accent-color2);
+}
+
+.form .field-wrapper.selection-wrapper label.wrong {
+  background-color: var(--accent-red);
+}
+
+/* Feedback text below the question */
+.quiz-question .feedback {
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
+.form label.correct {
+  background-color: #e6ffe6;
+  border: 2px solid green;
+}
+
+.form label.wrong {
+  background-color: #ffe6e6;
+  border: 2px solid red;
+}
+
+
+/*End of CSS for the quiz options*/
 
 .form label[data-required]::after {
   content: '*';
