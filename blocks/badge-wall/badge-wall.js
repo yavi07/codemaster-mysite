@@ -10,9 +10,8 @@ export default function decorate(block) {
     const img = cols[0].querySelector('picture') || document.createElement('div');
     const text = cols[1].textContent.trim();
 
-    // Extract badge key from text (assumes format: "React Badge  You Have Mastered React!")
     const [title, desc] = text.split('  ');
-    const badgeId = title.toLowerCase().split(' ')[0]; // e.g., "react"
+    const badgeId = title.toLowerCase().split(' ')[0];
 
     const badge = document.createElement('div');
     badge.className = 'badge';
