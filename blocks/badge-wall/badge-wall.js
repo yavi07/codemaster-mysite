@@ -11,7 +11,12 @@ export default function decorate(block) {
     const text = cols[1].textContent.trim();
 
     const [title, desc] = text.split('  ');
-    const badgeId = title.toLowerCase().split(' ')[0];
+
+    // ✅ Use alt text as badge ID, fallback to first word of title
+    const imgEl = img.querySelector('img');
+    const alt = imgEl?.getAttribute('alt') || '';
+    const match = alt.match(/badge:(\w+)/i);
+    const badgeId = match ? match[1].toLowerCase() : title?.toLowerCase().split(' ')[0];
 
     const badge = document.createElement('div');
     badge.className = 'badge';

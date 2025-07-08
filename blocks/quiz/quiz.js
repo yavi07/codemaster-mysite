@@ -19,7 +19,7 @@ export default async function decorate(block) {
   // Extract question and options
   const question = data.find(d => d.Type === 'plaintext');
   const options = data.filter(d => d.Type === 'radio');
-  const confirmation = data.find(d => d.confirmation !== undefined || d.Label === 'confirmation');
+  const confirmation = data.find(d => d.Label === 'confirmation');
 
   const wrapper = document.createElement('div');
   wrapper.className = 'quiz-wrapper';
@@ -32,7 +32,7 @@ export default async function decorate(block) {
   const optionsWrapper = document.createElement('div');
   optionsWrapper.className = 'quiz-options';
 
-  options.forEach((opt, idx) => {
+  options.forEach((opt) => {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'quiz-option';
@@ -49,11 +49,17 @@ export default async function decorate(block) {
       // Mark selected
       btn.classList.add(isCorrect ? 'correct' : 'wrong');
 
-      // Redirect if correct
-      if (isCorrect && confirmation?.Value) {
-        setTimeout(() => {
-          window.location.href = confirmation.Value;
-        }, 1000);
+      const quizId = block.classList[1]; // e.g., 'html'
+      if (isCorrect) {
+        localStorage.setItem(`quizPassed-${quizId}`, true);
+        localStorage.setItem(`badge-${quizId}`, 'earned');
+
+        // Redirect if confirmation exists
+        if (confirmation?.Value) {
+          setTimeout(() => {
+            window.location.href = confirmation.Value;
+          }, 1000);
+        }
       }
     });
 
