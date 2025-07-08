@@ -1,0 +1,48 @@
+.badge-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.badge.earned {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.badge-image picture,
+.badge-image img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.badge-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.badge-desc {
+  font-size: 0.85rem;
+  color: #444;
+}

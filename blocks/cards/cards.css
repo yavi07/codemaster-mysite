@@ -20,6 +20,10 @@
   margin: 16px;
 }
 
+.cards .cards.not-done {
+  background-color: #ccc;
+}
+
 .cards .cards-card-image {
   line-height: 0;
 }
