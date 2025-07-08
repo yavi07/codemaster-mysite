@@ -51,8 +51,8 @@ export default async function decorate(block) {
 
       const quizId = block.classList[1]; // e.g., 'html'
       if (isCorrect) {
-        localStorage.setItem(`quizPassed-${quizId}`, true);
-        localStorage.setItem(`badge-${quizId}`, 'earned');
+        sessionStorageStorage.setItem(`quizPassed-${quizId}`, true);
+        sessionStorage.setItem(`badge-${quizId}`, 'earned');
 
         // Redirect if confirmation exists
         if (confirmation?.Value) {
