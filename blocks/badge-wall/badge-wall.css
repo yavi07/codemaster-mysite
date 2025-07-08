@@ -20,7 +20,7 @@
   border-color: #4caf50;
   background-color: #e8f5e9;
   opacity: 1;
-  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+  box-shadow: 0 0 10px rgb(76 175 80 / 50%);
 }
 
 .badge-image picture,
