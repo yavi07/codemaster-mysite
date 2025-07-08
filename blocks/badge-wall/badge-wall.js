@@ -20,7 +20,6 @@ export default function decorate(block) {
 
     const badge = document.createElement('div');
     badge.className = 'badge';
-
     if (sessionStorage.getItem(`badge-${badgeId}`) === 'earned') {
       badge.classList.add('earned');
     }
