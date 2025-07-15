@@ -89,7 +89,7 @@ export default function decorate(block) {
       const passedAll = ['q1', 'q2', 'q3'].every(q => sessionStorage.getItem(`${quizPrefix}-${q}`) === 'correct');
       if (passedAll) {
         sessionStorage.setItem(`${quizPrefix}-status`, 'correct');
-        localStorage.setItem(`badge-${quizPrefix}`, 'earned');
+        sessionStorage.setItem(`badge-${quizPrefix}`, 'earned');
       }
     }
 
