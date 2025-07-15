@@ -17,9 +17,9 @@ export default async function decorate(block) {
   });
 
   // Extract question and options
-  const question = data.find(d => d.Type === 'plaintext');
-  const options = data.filter(d => d.Type === 'radio');
-  const confirmation = data.find(d => d.Label === 'confirmation');
+  const question = data.find((d) => d.Type === 'plaintext');
+  const options = data.filter((d) => d.Type === 'radio');
+  const confirmation = data.find((d) => d.Label === 'confirmation');
 
   const wrapper = document.createElement('div');
   wrapper.className = 'quiz-wrapper';
@@ -42,7 +42,7 @@ export default async function decorate(block) {
       const isCorrect = opt.Value.toLowerCase() === 'true';
 
       // Clear all states
-      optionsWrapper.querySelectorAll('button').forEach(b => {
+      optionsWrapper.querySelectorAll('button').forEach((b) => {
         b.classList.remove('correct', 'wrong');
       });
 
