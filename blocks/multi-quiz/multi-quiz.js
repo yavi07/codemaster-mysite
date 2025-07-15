@@ -7,11 +7,12 @@ export default function decorate(block) {
 
   // 1. Extract quiz ID and sub-question number
   const quizIdText = rows[0]?.children[0]?.textContent || '';
+  console.log(quizIdText);
   const quizIdMatch = quizIdText.match(/\((.*?)\)/);
   const fullQuizId = quizIdMatch ? quizIdMatch[1].trim() : 'unknown'; // e.g., quiz-react-q1
   const isFinalQuestion = fullQuizId.endsWith('q3'); // Customize if more/fewer
   const quizPrefix = fullQuizId.split('-q')[0]; // e.g., 'quiz-react'
-
+  
   // 2. Extract question
   const questionRow = rows[1];
   const question = [...questionRow.children].map(c => c.textContent.trim()).filter(Boolean).join(' ') || 'Question missing';
