@@ -5,10 +5,10 @@ footer {
   width:auto;
 }
 
-footer .footer > div {
+footer .footer div {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  padding: 24px auto 24px;
 }
 
 footer .footer p,
@@ -18,6 +18,28 @@ footer .footer a{
 
 footer .footer a{
   color: var(--text-color);
+}
+
+footer .footer .columns > div  {
+  border:none; 
+}
+
+footer .footer .columns > div a{
+  align-content: center;
+  padding: 12px;
+}
+
+footer .footer .columns > div a img{
+  height: 24px;
+  width: auto;
+}
+
+footer .footer .columns > div a.button {
+  background-color: var(--blue-color);
+}
+
+footer .footer .columns > div:hover{
+  transform: none;
 }
 
 footer .footer ul a{
