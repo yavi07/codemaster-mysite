@@ -33,6 +33,7 @@
 
 .quiz-option:hover {
   background-color: #e0e0e0;
+  color: var(--dark-color);
 }
 
 .quiz-option.correct {
