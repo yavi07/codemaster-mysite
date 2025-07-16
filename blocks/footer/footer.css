@@ -3,6 +3,7 @@ footer {
   color: var(--dark-color);
   font-size: var(--body-font-size-xs);
   width:auto;
+  padding: 24px;
 }
 
 footer .footer div {
@@ -13,37 +14,19 @@ footer .footer div {
 
 footer .footer p,
 footer .footer a{
-  margin: 0;
+  margin: 24px;
 }
 
+footer .footer img{
+  min-width: 48px;
+  min-height: 48px;
+}
 footer .footer a{
   color: var(--text-color);
 }
 
-footer .footer .columns > div  {
-  border:none; 
-}
-
 footer div{
   margin-top: -24px;
-}
-
-footer .footer .columns > div a{
-  align-content: center;
-  padding: 12px;
-}
-
-footer .footer .columns > div a img{
-  height: 24px;
-  width: auto;
-}
-
-footer .footer .columns > div a.button {
-  background-color: var(--blue-color);
-}
-
-footer .footer .columns > div:hover{
-  transform: none;
 }
 
 footer .footer ul a{
