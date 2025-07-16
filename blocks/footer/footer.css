@@ -24,6 +24,10 @@ footer .footer .columns > div  {
   border:none; 
 }
 
+footer div{
+  margin-top: -24px;
+}
+
 footer .footer .columns > div a{
   align-content: center;
   padding: 12px;
